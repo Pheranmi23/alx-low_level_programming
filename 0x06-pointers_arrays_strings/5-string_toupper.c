@@ -18,6 +18,5 @@ char *string_toupper(char *s)
 			*(s + count) = *(s + count) - 32;
 		count++;
 	}
-
 	return (s);
 }
