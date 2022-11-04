@@ -14,7 +14,7 @@ int power_operation(int n, int b)
 			return (b);
 		else
 			return (-1);
-	
+
 	}
 	return (0 + power_operation(n, b + 1));
 }
