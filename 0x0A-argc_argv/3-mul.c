@@ -2,27 +2,25 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
- * @argc: arg count
- * @argv: arg vector
- * Return: success
+ * main - multiplies two numbers.
+ * @argc: argument count
+ * @argv: arguments
+ *
+ * Return: 0
  */
-
 int main(int argc, char **argv)
 {
-	int result = 1, i;
+	int x, y;
 
-	if (argc == 3)
-	{
-		for (i = 1; i < argc; i++)
-			result = result * strtol(argv[i], NULL, 10);
-		printf("%d\n", result);
-	}
-	else
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
+
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	printf("%d\n", x * y);
 
 	return (0);
 }
